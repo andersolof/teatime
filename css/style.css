@@ -1,0 +1,268 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700);
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #777777;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+header {
+	background-color: #FFFFFF;
+	height: 75px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	box-shadow: 0 0 10px rgba(0,0,0,0.3)
+}
+
+.container {
+	/*max widht works with responsive sites and does not cause scroll bars, swuashes content inside as the screen shrinks*/
+	max-width: 960px;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	/*border: solid 2px #FF7163;*/
+}
+
+nav {
+	float: right;
+	line-height: 75px;
+}
+
+p {
+	margin: 0px 0 10px 0;
+}
+
+h1 {
+	line-height: 75px;
+	float: left;
+}
+
+h1 img {
+	padding-left: 30px;
+	vertical-align: middle; 
+}
+
+h2 {
+	font-size: 60px;
+	line-height: 1.0;
+	color: #FFFFFF;
+}
+
+h3 {
+	font-size: 28px;
+	font-weight: 400;
+	margin: 40px 0 0px 0;
+}
+
+blockquote {
+	font-size: 24px;
+	margin: 20px 0 20px 0;
+}
+
+nav a {
+	color: #666666;
+	text-decoration: none;
+	padding: 0 20px 0 20px;
+	display: inline-block;
+}
+
+nav a:hover {
+	background-color: #000;
+	color: #FFFFFF;
+}
+.intro {
+	margin-top: 75px;
+	background: url(../images/blur-bg.jpg) center no-repeat;
+	background-size: cover; 
+	/*set hight or width to be able to use overflow. if something falls out of the scetion use overflow hidden. */
+	height: 500px;
+	overflow: hidden;
+}
+
+.iphone {
+	float: left;
+	width: 50%;
+	text-align: center;
+
+}
+
+.iphone img {
+	padding: 40px 0 0 0;
+	width: 260px;	
+}
+
+.lead {
+	float: right;
+	width: 50%;
+	padding: 70px 70px 70px 70px;
+}
+
+.lead img {
+	
+}
+
+.lead p {
+	margin: 50px 0 50px 0;
+	font-size: 20px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+
+
+
+.feature {
+	text-align: center;
+	padding: 50px 30px 40px 30px;
+	
+}
+
+.feature img {
+	max-width: 72px;
+}
+
+.testimonials {
+	background-color: #ededed;
+}
+
+.quote {
+	margin: 30px 0px 30px 0px;
+	padding: 0 10px 0 10px;
+	text-align: center;
+	font-weight: 200;
+	border-color: #ededed;
+}
+
+.quote p {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.tile img {
+	border-radius: 50%;
+	width: 70px;
+}
+
+
+.tile { 
+	background-color: #FFFFFF;
+	margin: 0 20px 0 20px;
+	padding: 40px;
+
+}
+
+
+
+.contact {
+	background: url(../images/map.jpg);
+	background-size: cover;
+	padding: 60px 0 70px 0;
+	text-align: center;
+}
+
+.contact a {
+	color: #444444;
+}
+
+input, textarea {
+	margin: 5px auto 0 auto;
+	border: solid 1px;
+	border-color: #ededed;
+	padding: 10px;
+	width: 100%;
+	border-radius: 2px;
+	display: block;
+
+
+
+}
+
+textarea {
+	resize: vertical;
+	height: 150px;
+}
+
+input[type="submit"] {
+	background-color: #000;
+	color: #FFFFFF;
+	width: 100px;
+	float: right;
+	border-radius: 2px;
+	display: block;
+	
+} 
+
+.button {
+	width: 640px;
+}
+
+footer {
+	text-align: center;
+	margin: 30px 0 30px 0;
+}
+
+footer img {
+	margin: 10px;
+}
+
+small {
+	margin: 20px 0 0 0;
+	display: block;
+}
+
+.socialicons a {
+	text-decoration: none;
+}
+
+
+@media screen and (max-width: 760px) {
+
+	h1, nav, .iphone, .lead, input[type="submit"] {
+		float: none;
+		width: 100%;
+	}
+
+	header {
+		height: auto;
+		text-align: center;
+		position: static;
+	}
+
+	header img {
+		padding: 0;
+	}
+
+	nav a {
+		display: block;
+	}
+
+	.intro {
+		margin: 0;
+		float: none;
+		width: 100%;
+		height: 900px;
+	}
+
+	.iphone img {
+		padding: 0;
+	}
+
+	form, textarea, input[type="submit"] {
+		width: 80%;
+		margin: 10px auto 0 auto;
+	}
+
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+
+.lead a {
+		display:none;
+	}
+
+}
